@@ -1,0 +1,43 @@
+{
+  "name": "fiapx-video-worker",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "packageManager": "yarn@4.10.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "depcruise": "depcruise src --config .dependency-cruiser.cjs",
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/platform-express": "^11.1.6",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@nestjs/cli": "^11.0.10",
+    "@nestjs/schematics": "^11.0.7",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.19.0",
+    "dependency-cruiser": "^16.10.4",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "jest": "^29.7.0",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
+  }
+}
